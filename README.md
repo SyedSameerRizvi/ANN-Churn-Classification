@@ -39,11 +39,27 @@ The model is a neural network built using TensorFlow and Keras, trained to predi
 - Is Active Member (binary)
 - Estimated Salary
 
+## Usage
+
+1. Open the web app. [Customer Churn Prediction App](https://ann-churn-classification-7x9snbrry3gappwr6arr26d.streamlit.app/)
+
 ## How it Works
 1. The user inputs their data through the Streamlit interface.
 2. The app preprocesses the inputs (encoding categorical data and scaling numerical data).
 3. The pre-trained TensorFlow model predicts the probability of customer churn.
 4. The app displays the churn probability and whether the customer is likely to churn or not.
 
+## Files Description
+- `app.py`: The script to run the Streamlit app for churn estimation. It handles user inputs, preprocessing, and model prediction​.
+- `model.keras`: The pre-trained neural network model used for churn prediction.
+- `onehotencoder_geography.pkl`: Pickle file containing the one-hot encoder for the Geography feature.
+- `label_encoder_gender.pkl`: Pickle file containing the label encoder for the Gender feature.
+- `scaler.pkl`: Pickle file containing the StandardScaler used for scaling numerical features.
+
+The model was built using TensorFlow and the `model.keras` file stores the saved model, which is loaded during app runtime for predictions.
+
 ## Acknowledgments
 This project was built using TensorFlow and Streamlit, with inspiration from various machine learning and data science resources.
+
+## Contributing
+Contributions are welcome! Feel free to submit a pull request or open an issue if you find any bugs or want to improve the app.
